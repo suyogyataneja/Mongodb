@@ -25,7 +25,7 @@ mongodbClient.connect(DB_URL,{
         console.log('connection successful');
         db = client.db('carsdb'); // this is database 
 
-        // this is the collection
+        // this is the collection and we are inserting one element at a time
         db.collection('newcars').insertOne({maker:'BMW', model: 'x7'});
     }
 
